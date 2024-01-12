@@ -3,32 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte / Pré-formatação</h2>
-    <p>O comando document <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
-    <pre>
-        <code>
-    num = int(input('Digite um número'))
-    if num % 2 == 0:
-        print(f'O número {num} é PAR')
-    else:
-        print(f'P número {num} é IMPAR)
-    print('fim do programa')
-        </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q> (Semantico)</p>
-    <h2>Citações completas</h2>
-    <p>Segundo Stephen Hawking</p>
-    <blockquote>
-        Eu sou apenas uma criança que nunca cresceu. Eu ainda faço perguntas de 'como' e 'por que'. Ocasionalmente eu encontro uma resposta.
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, Estou adorando!</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="a"><!-- 1 - A - a - I - i  -->
+        <li>Acordar</li>
+        <li>Ligar para o João
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o Trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="circle"><!-- disc - circle - square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Mateiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Ovos</li>
+        <li>Queijo</li>
+        <li>Cebolas</li>
+        <li>Batatas</li>
+    </ul>
+    <h2>Minha linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Shell Script</li>
+            <li>Flutter</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="3">
+            <li>Python</li>
+            <li>JavaScript</li>
+        </ol>        
+    </ol>
+    <h2>Jogos que mais joguei</h2>
+    <ol>
+        <li>Game Boy</li>
+        <ul type="square">
+            <li>Pokemon</li>
+            <li>Zelda</li>
+            <li>Super Mario</li>
+        </ul tpe="square">
+        <li>Master Sistem</li>
+        <ul type="square">
+            <li>Alex Kid</li>
+            <li>Sonic</li>
+            <li>Bubble Bobble</li>
+        </ul tpe="square">
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Crash Bandcoot</li>
+            <li>Silent Hill</li>
+            <li>Monstros S.A.</li>
+        </ul tpe="square">
+        <li>SNES</li>
+        <ul type="square">
+            <li>Super Mario World</li>
+            <li>Donkey Kong</li>
+            <li>Bomberman</li>
+        </ul tpe="square">
+    </ol>
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt><b>HTML</b></dt>
+        <dd>Linguagem de marcação para crianção de conteúdo para sites.</dd>
+        <dt><b>CSS</b></dt>
+        <dd>Linguagem de marcação para estilização de sites.</dd>
+        <dt><b>JavaScript</b></dt>
+        <dd>linguagem de programação para criação de interatividade de sites.</dd>
+    </dl>
 </body>
 </html>
