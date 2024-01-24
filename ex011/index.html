@@ -18,11 +18,22 @@
     <h1>Reproduzindo audio</h1>
     <p>Vamos aprender a reproduzir audios em HTML5.</p>
     <!-- <audio src="music/song.mp3" controls autoplay></audio> -->
-    <audio preload="none" autoplay controls loop>
+    <audio preload="none" controls loop>
         <source src="music/song.mp3" type="audio/mpeg">
         <source src="music/song.ogg" type="audio/ogg">
         <source src="music/song.wav" type="audio/wav">
         <p>Sinto muito, mas seu navegador não conseguiu executar essa midia. <a href="music/song.mp3" download="music/song.mp3" type="archive/mpeg" >Clique aqui para fazer o donload do mp3.</a></p>
     </audio>
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Esta vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="500px" poster="images/code.jpg" controls loop>
+        <source src="videos/code(720p).ogv" type="video/ogv">    
+        <source src="videos/code(1080p).webm" type="video/webm">
+        <source src="videos/code(720p).mp4" type="video/mp4">
+        <source src="videos/code(1080p).mp4" title="video/mp4">
+        <p>Isso não está funcionando como deveria, por favor tente com outro navegador.</p>
+    </video>
 </body>
 </html>
