@@ -1,0 +1,100 @@
+body{
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.box-principal{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 800px;
+    min-width: 320px;
+    height: 350px;
+}
+
+.page-title{
+    margin: auto;
+    height: 100px;
+    width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black            
+}
+
+.colection{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    display: table-column-group;
+    justify-content: space-around;
+    margin: auto;
+    width: 800px;
+    min-width: 320px;
+    height: 350px;
+    order: 0;
+}
+
+.box1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    order: 1;
+}
+
+.box2{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 78%;
+    right: 15%;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    order: 1;
+}
+
+.playlist{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.back{
+    height: 50px;
+    width: 50px;
+}
+
+.video{
+    padding: 20px;
+    width: 800px;
+}
+
+iframe{
+    width: 100%;
+    height: 520px;
+}
+
+img{
+    padding: 20px;
+    width: 400px;
+}
