@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: #dda0dd;
+            text-align: center;
+            border: 3px solid #dd74dd;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover{
+            background-color: #dd74dd;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        div:hover > p{
+            font-size: 25px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #dda0dd;
+            border-radius: 30px;
+            display: ruby-text;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01
+        <p>Essa é a caixa 1</p>
+    </div>
+    <div id="d2">02
+        <p>Essa é a caixa 2</p>
+    </div>
+    <div id="d3">03
+        <p>Essa é a caixa 3</p>
+    </div>
+</body>
+</html>
