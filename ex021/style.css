@@ -1,35 +1,42 @@
 body{
     font: normal 16px Arial, Helvetica, sans-serif;
-    background-color: #012330;
+    background: #020024;
+    background: linear-gradient(158deg, #020024 12%, #090979 35%, #00d4ff 100%);
     width: 800px;
-    height: 100%;
+    min-height: 900px;
     margin: auto;
 }
 
 header{
-    background-color: #698ba8;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 5px;
+    background-color: #d7f8fd;
+    border-radius: 10px 10px 0px 0px;
+    padding: 8px 0px;
+    margin: 5px 5px 0px;
 }
 
 #title{
     font-size: 3em;
-    color: #74d3d3;
-    text-shadow: 2px 2px 5px #3c6d6d;
+    color: #000000;
+    text-shadow: 2px 2px 5px #00000075;
     text-align: center;
 }
 
 nav{
-    background-color: black;
-    padding: 8px;
+    background: linear-gradient(328deg, #020024 12%, #090979 25%, #00d4ff 80%);
+    border-radius: 20px;
+    padding: 4px;
+    margin: 0px 10px;
+}
+
+nav:hover{
+    background: linear-gradient(348deg, #020024 12%, #090979 35%, #00d4ff 100%);
 }
 
 a{
-    margin-left: 50px;
+    margin-left: 20px;
     font-weight: bolder;
     text-decoration: none;
-    color: #c0bfbf;
+    color: #020202;
 }
 
 a:hover{
@@ -39,39 +46,37 @@ a:hover{
 
 
 main{
-    background-color: white;
-    margin: 0px 5px;
+    background-color: #d7f8fd;
+    margin: 0px 5px 15px;
     padding: 10px 0px 5px;
-    border-radius: 2px;
 }
 
 section{
-    background-color: #c4cbd1;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 5px 15px 10px;
     padding: 5px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 10px;
-    box-shadow: 2px 2px 5px #626669;
+    border-radius: 6px;
+    box-shadow: inset -3px -2px 10px #00000059;
+    background: linear-gradient(108deg, #020024 22%, #090979 55%, #00d4ff 100%);
 }
 
 p.presentation-title{
-    margin: 10px;
+    margin: 10px 10px 5px;
+    font: bold 18px sans-serif;
+    color: #021f3d;
     text-align: right;
 }
 
 h1{
+    color: #0654ad;
     font-size: 35px;
-    margin-top: 5px;
+    margin: 5px 10px 2px;
 }
 
 article{
-    background-color: rgb(255, 255, 255);
-    margin: 5px;
-    margin-top: 0px;
+    background-color: #ffffff;
+    margin: 0px 5px 10px;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 p{
@@ -82,12 +87,17 @@ p{
 footer{
     height: 40px;
     padding-left: 10px;
-    margin: 5px;
-    margin-top: -6px;
+    margin: 4px;
+    margin-top: -17px;
     background-color: #000102;
     color: white;
     font-weight: bolder;
     font-size: 18px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+footer > p{
+    margin: 0px;
+    padding: 10px 0px;
 }
