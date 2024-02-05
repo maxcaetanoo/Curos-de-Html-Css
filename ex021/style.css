@@ -37,6 +37,7 @@ a{
     font-weight: bolder;
     text-decoration: none;
     color: #020202;
+    text-shadow: 1px 1px 4px #0000009c;
 }
 
 a:hover{
@@ -59,15 +60,21 @@ section{
     background: linear-gradient(108deg, #020024 22%, #090979 55%, #00d4ff 100%);
 }
 
+section#presentation{
+    margin: 5px 15px 20px;
+}
+
 p.presentation-title{
     margin: 10px 10px 5px;
     font: bold 18px sans-serif;
     color: #021f3d;
+    text-shadow: 1px 1px 4px #0000009c;
     text-align: right;
 }
 
 h1{
     color: #0654ad;
+    text-shadow: 2px 2px 3px #000000ec;
     font-size: 35px;
     margin: 5px 10px 2px;
 }
