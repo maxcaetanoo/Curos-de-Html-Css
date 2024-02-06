@@ -189,3 +189,9 @@ footer {
     padding: 1px 10px;
     font: 700 14px Arial;
 }
+
+mark>a {
+    color: #1A5C38;
+    text-decoration: none;
+    font: 900 18px Arial;
+}
