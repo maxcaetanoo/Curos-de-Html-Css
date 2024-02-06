@@ -63,7 +63,7 @@ nav>a {
 
 main {
     width: 900px;
-    margin: 4px auto;
+    margin: auto;
     padding-bottom: 10px ;
     background-color: white;
 }
@@ -94,7 +94,7 @@ section>h2 {
 h2 {
     font: 800 32px idroid , sans-serif;
     color: #207446;
-    margin: 0px;
+    margin: 5px;
     padding: 8px 8px;
     background: linear-gradient(to right, #46fa9767, white);
 }
@@ -113,8 +113,8 @@ p>mark {
 }
 
 picture, img, source {
-    width: 100%;
     margin: auto;
+    width: 100%;
 }
 
 .center {
@@ -136,12 +136,12 @@ iframe {
 
 aside {
     margin: 10px 20px 20px;
-    background-color: #46fa9771;
+    background-color: #36bd7371;
     border-radius: 20px;
 }
 
 section>h3 {
-    background-color: #1A5C38;
+    background-color: #1a5c38cc;
     padding: 20px 5px 15px;
     text-indent: 10px;
     border-radius: 20px 20px 0px 0px;
@@ -167,4 +167,25 @@ ul>li {
 
 li>a {
     color: black;
+}
+
+p>a::after {
+    content: '🔗';
+}
+
+li::before {
+    content: '✔️';
+}
+
+article>p {
+    margin: 20px 15px;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px 10px;
+    font: 700 14px Arial;
 }
