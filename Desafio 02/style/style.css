@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
     font-family: 'idroid';
@@ -11,19 +9,42 @@
     font-style: normal;
 }
 
+:root {
+    /*Cores*/
+    --cor-0: #ffffff;
+    --cor-1: #8ffcc0;
+    --cor-2: #207446;
+    --cor-3: #1A5C38;
+    --cor-4: #0d2c1b;
+    --cor-5: #07180f;
+
+
+    /*Fontes*/
+    --font-principal: Arial, Helvetica, sans-serif;
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-android: idroid, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: normal 16px var(--font-principal);
+}
+
 body {
     margin: auto;
     padding: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #46fa9788;
+    max-width: 100%;
+    min-width: 280px;
+    background-color: var(--cor-1);
 }
 
 header {
+    max-width: 100%;
+    min-width: 280px;
     display: block;
     padding: 40px;
-    background: linear-gradient(360deg, #1A5C38 20%, #207446 30%, #46fa97 100%);
-    box-shadow: 0px 4px 3px #00000080;
+    background: linear-gradient(360deg, var(--cor-3) 10%, var(--cor-2) 25%, var(--cor-1) 100%);
 }
 
 header>h1 {
@@ -33,7 +54,7 @@ header>h1 {
     font-weight: 900;
     font-family: monospace;
     color: white;
-    text-shadow: 1px 1px 3px #00000080;
+    text-shadow: 1px 1px 3px var(--cor-5);
     padding: auto, auto, -20px;
 }
 
@@ -43,43 +64,53 @@ header>p {
     font-size: 18px;
     font-weight: 800;
     color: white;
-    width: 540px;
-    text-shadow: 1px 1px 3px #00000080;
+    max-width: 540px;
+    min-width: 280px;
+    text-shadow: 1px 1px 3px var(--cor-4);
 }
 
-header>nav {
+nav {
+    background-color: var(--cor-3);
     display: flex;
-    margin: 60px 0px -36px -25px;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0px 4px 3px #00000080;
 }
 
 nav>a {
-    margin: 5px 10px 5px 5px;
+    margin: 10px;
+    padding: 10px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
     color: white;
-    text-shadow: 1px 1px 3px #00000080;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+nav>a:hover {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--cor-2);
+    border-radius: 10px;
 }
 
 main {
-    width: 900px;
+    max-width: 800px;
     margin: auto;
-    padding-bottom: 10px ;
     background-color: white;
 }
 
-section {
-    padding: 0px 0px;
+article {
+    padding: 5px;
 }
 
-section>h1 {
-    font: 800 38px idroid , sans-serif;
-    color: #207446;
+article>h1 {
+    font: 800 38px var(--font-android) , sans-serif;
+    color: var(--cor-2);
     margin: 0px;
     padding: 8px 15px;
 }
 
-section>p {
+article>p {
     text-indent: 20px;
     font-weight: 400;
     font-size: 18px;
@@ -87,13 +118,13 @@ section>p {
     text-align: justify;
 }
 
-section>h2 {
+article>h2 {
     padding: 10px 15px;
 }
 
 h2 {
     font: 800 32px idroid , sans-serif;
-    color: #207446;
+    color: var(--cor-2);
     margin: 5px;
     padding: 8px 8px;
     background: linear-gradient(to right, #46fa9767, white);
@@ -105,11 +136,10 @@ p>a {
     font-weight: 600;
 }
 
-p>mark {
+p>strong {
     font-style: none;
     font-weight: 600;
-    color: #1A5C38;
-    background-color: transparent;
+    color: var(--cor-3);
 }
 
 picture, img, source {
@@ -135,28 +165,30 @@ iframe {
 }
 
 aside {
+    display: block;
     margin: 10px 20px 20px;
-    background-color: #36bd7371;
+    background-color: var(--cor-1);
+    padding: 20px 5px 15px;
+    text-indent: 10px;
     border-radius: 20px;
 }
 
-section>h3 {
-    background-color: #1a5c38cc;
+aside>h3 {
+    background-color: var(--cor-3);
     padding: 20px 5px 15px;
+    margin: -20px -5px 5px;
     text-indent: 10px;
     border-radius: 20px 20px 0px 0px;
     font-size: 20px;
     color: white;
 }
 
-section>section {
-    display: flex;
-}
-
-section>ul {
-    margin-right: auto;
-    display: inline;
-    align-items: center;
+aside>p {
+    text-indent: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px;
+    text-align: justify;
 }
 
 ul>li {
@@ -167,6 +199,11 @@ ul>li {
 
 li>a {
     color: black;
+    text-decoration: none;
+}
+
+a>abbr {
+    text-decoration: none;
 }
 
 p>a::after {
@@ -177,21 +214,22 @@ li::before {
     content: '✔️';
 }
 
-article>p {
+section>p {
     margin: 20px 15px;
     text-indent: 20px;
     font-size: 18px;
 }
 
 footer {
-    background-color: black;
+    background-color: var(--cor-5);
     color: white;
     padding: 1px 10px;
     font: 700 14px Arial;
+    text-align: center;
 }
 
-mark>a {
-    color: #1A5C38;
+strong>a {
+    color: var(--cor-3);
     text-decoration: none;
     font: 900 18px Arial;
 }
