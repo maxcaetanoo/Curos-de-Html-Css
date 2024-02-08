@@ -17,8 +17,8 @@
     --cor-3: #1A5C38;
     --cor-4: #0d2c1b;
     --cor-5: #07180f;
-
-
+    
+    
     /*Fontes*/
     --font-principal: Arial, Helvetica, sans-serif;
     --font-destaque: "Bebas Neue", sans-serif;
@@ -40,50 +40,49 @@ body {
 }
 
 header {
+    text-align: center;
     max-width: 100%;
     min-width: 280px;
-    display: block;
     padding: 40px;
-    background: linear-gradient(360deg, var(--cor-3) 10%, var(--cor-2) 25%, var(--cor-1) 100%);
+    background: linear-gradient(360deg, var(--cor-3) 10%, var(--cor-2) 35%, var(--cor-1) 100%);
 }
 
 header>h1 {
-    text-align: center;
+    padding: 10px 15px;
+    margin: 10px 15px 10px;
     text-transform: uppercase;
-    font-size: 50px;
-    font-weight: 900;
-    font-family: monospace;
-    color: white;
+    font: 900 4em var(--font-destaque);
+    color: var(--cor-0);
     text-shadow: 1px 1px 3px var(--cor-5);
-    padding: auto, auto, -20px;
 }
 
 header>p {
     margin: auto;
     text-align: center;
-    font-size: 18px;
-    font-weight: 800;
+    font: 800 20px var(--font-principal);
     color: white;
-    max-width: 540px;
+    max-width: 500px;
     min-width: 280px;
     text-shadow: 1px 1px 3px var(--cor-4);
 }
 
 nav {
+    min-width: 320px;
     background-color: var(--cor-3);
     display: flex;
     margin: 0px 0px 0px 0px;
-    box-shadow: 0px 4px 3px #00000080;
+    box-shadow: 0px 4px 2px #00000080;
 }
 
 nav>a {
+    
     margin: 10px;
     padding: 10px;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 900 2em var(--font-destaque);
     color: white;
-    text-shadow: 2px 2px 4px #00000080;
+    text-shadow: 2px 2px 2px #00000080;
+    transition-duration: .4s;
 }
 
 nav>a:hover {
@@ -95,39 +94,52 @@ nav>a:hover {
 
 main {
     max-width: 800px;
-    margin: auto;
+    min-width: 320px;
+    margin: auto auto 15px;
     background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h1 {
+    font: 800 38px var(--font-android);
+    color: var(--cor-2);
+    margin: 0px;
+    padding: 8px 15px;
+}
+
+main h2 {
+    font: 800 32px var(--font-android);
+    color: var(--cor-2);
+    margin: 5px;
+    padding: 8px 8px;
+    background: linear-gradient(to right, #46fa9767, transparent);
+}
+
+main h3 {
+    background-color: var(--cor-3);
+    padding: 20px 5px 15px;
+    margin: -20px -5px 5px;
+    text-indent: 10px;
+    border-radius: 20px 20px 0px 0px;
+    font: bold 20px var(--font-principal);
+    color: white;
+}
+
+main p {
+    text-indent: 20px;
+    font-weight: 600 1.2em var(--font-principal);
+    padding: 30px;
+    text-align: justify;
+    line-height: 2em;
 }
 
 article {
     padding: 5px;
 }
 
-article>h1 {
-    font: 800 38px var(--font-android) , sans-serif;
-    color: var(--cor-2);
-    margin: 0px;
-    padding: 8px 15px;
-}
-
-article>p {
-    text-indent: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 15px;
-    text-align: justify;
-}
-
-article>h2 {
-    padding: 10px 15px;
-}
-
-h2 {
-    font: 800 32px idroid , sans-serif;
-    color: var(--cor-2);
-    margin: 5px;
-    padding: 8px 8px;
-    background: linear-gradient(to right, #46fa9767, white);
+img{
+    margin: auto;
+    max-width: 100%;
 }
 
 p>a {
@@ -142,26 +154,19 @@ p>strong {
     color: var(--cor-3);
 }
 
-picture, img, source {
-    margin: auto;
-    width: 100%;
-}
-
-.center {
-    display: flex;
-}
-
 img.small {
-    width: 50%;
+    display: flex;
+    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
 }
 
 iframe {
-    margin: auto;
+    max-width: 800px;
+    margin: auto -5px;
     padding: 20px 45px;
-    background-color: #1A5C38;
+    background-color: var(--cor-3);
 }
 
 aside {
@@ -171,24 +176,6 @@ aside {
     padding: 20px 5px 15px;
     text-indent: 10px;
     border-radius: 20px;
-}
-
-aside>h3 {
-    background-color: var(--cor-3);
-    padding: 20px 5px 15px;
-    margin: -20px -5px 5px;
-    text-indent: 10px;
-    border-radius: 20px 20px 0px 0px;
-    font-size: 20px;
-    color: white;
-}
-
-aside>p {
-    text-indent: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 15px;
-    text-align: justify;
 }
 
 ul>li {
@@ -206,7 +193,7 @@ a>abbr {
     text-decoration: none;
 }
 
-p>a::after {
+main a::after {
     content: '🔗';
 }
 
@@ -224,12 +211,11 @@ footer {
     background-color: var(--cor-5);
     color: white;
     padding: 1px 10px;
-    font: 700 14px Arial;
+    font: 700 14px var(--font-principal);
     text-align: center;
 }
 
-strong>a {
+footer a {
     color: var(--cor-3);
-    text-decoration: none;
-    font: 900 18px Arial;
+    font: 900 18px var(--font-principal);
 }
